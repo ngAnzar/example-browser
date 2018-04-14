@@ -1,0 +1,17 @@
+{
+    "extends": "./node_modules/@anzar/build-browser/tsconfig.json",
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@anzar/core/*": [
+                "./node_modules/@anzar/core/src/*"
+            ],
+            "@/*": [
+                "./src/*"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*.ts"
+    ]
+}

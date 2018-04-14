@@ -1,0 +1,23 @@
+{
+  "name": "@anzar/example-browser",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "anzar-build --config webpack.config.js serve --watch --hot",
+    "build": "anzar-build --config webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "dependencies": {
+    "@anzar/build-browser": "ngAnzar/build-browser",
+    "@anzar/core": "ngAnzar/core"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.1.3"
+  }
+}

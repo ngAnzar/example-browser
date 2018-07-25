@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "anzar-build --config webpack.config.mjs serve --watch --hot",
-    "build": "anzar-build --config webpack.config.mjs"
+    "start": "anzar-browser --config webpack.config.mjs --watch --hot",
+    "build": "anzar-browser --config webpack.config.mjs"
   },
   "author": "",
   "license": "ISC",

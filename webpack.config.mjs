@@ -1,17 +1,10 @@
-import path from "path"
-import webpack from "webpack"
-import HtmlWebpackPlugin from "html-webpack-plugin"
-import { config, environment } from "@anzar/build"
-
-
-export function root(location) {
-    return path.resolve(__dirname, location)
-}
+// import { config } from "@anzar/build"
+import { config } from "@anzar/build"
 
 
 export default config("@anzar/build-browser", {
     entry: {
-        polyfills: root("src/polyfills.ts"),
-        app: root("src/app.module.ts")
+        polyfills: "relative://src/polyfills.ts",
+        app: "relative://src/app.module.ts"
     }
 })

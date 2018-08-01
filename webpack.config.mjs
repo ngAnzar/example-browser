@@ -4,7 +4,7 @@ import { config } from "@anzar/build"
 
 export default config("@anzar/build-browser", {
     entry: {
-        polyfills: "relative://src/polyfills.ts",
-        app: "relative://src/app.module.ts"
+        // polyfills: [],
+        app: ["relative://src/polyfills.ts", "relative://src/app.module.ts"]
     }
 })

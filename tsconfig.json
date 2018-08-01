@@ -1,5 +1,5 @@
 {
-    // "extends": "./node_modules/@anzar/build-browser/tsconfig.json",
+    "extends": "./node_modules/@anzar/build-browser/tsconfig.json",
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {

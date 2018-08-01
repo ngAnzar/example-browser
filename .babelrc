@@ -1,0 +1,23 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "modules": false,
+                "loose": true,
+                "useBuiltIns": "usage",
+                "targets": {
+                    "uglify": true,
+                    "browsers": [
+                        "last 2 versions",
+                        "safari >= 7",
+                        "ie 11"
+                    ]
+                }
+            }
+        ]
+    ],
+    "plugins": [
+        "babel-plugin-syntax-dynamic-import"
+    ]
+}

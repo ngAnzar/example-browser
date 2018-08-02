@@ -5,5 +5,5 @@ import { Component } from "@angular/core"
     templateUrl: "./app.template.pug"
 })
 export class AppComponent {
-    public title: string = "Hello World Y"
+    public title: string = "Hello World"
 }

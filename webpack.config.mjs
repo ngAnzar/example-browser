@@ -1,5 +1,9 @@
-// import { config } from "@anzar/build"
-import { config } from "@anzar/build"
+import * as fs from "fs"
+
+import { config, options } from "@anzar/build"
+
+
+options.extend("stylusImports", fs.realpathSync("./src/theme.styl"))
 
 
 export default config("@anzar/build-browser", {

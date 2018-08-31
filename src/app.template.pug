@@ -1,1 +1,92 @@
-h1 {{title}}
+:stylus
+  .nz-button, .nz-fab
+    margin-right: 10px
+
+h1 Heading 1
+h2 Heading 2
+h3 Heading 3
+h4 Heading 4
+h5 Heading 5
+h6 Heading 6
+.nz-title subtitle1
+.nz-subtitle subtitle2
+caption caption
+
+h1 Transparent buttons
+
+button.nz-button Default
+button.nz-button(color="primary") Primary
+button.nz-button(color="accent") Accent
+button.nz-button(color="warn") warn
+button.nz-button(color="critical") critical
+button.nz-button(color="confirm") confirm
+button.nz-button(color="info") info
+
+h1 Transparent buttons / raised
+
+button.nz-button Default
+button.nz-button(color="primary" variant="raised") Primary
+button.nz-button(color="accent" variant="raised") Accent
+button.nz-button(color="warn" variant="raised") warn
+button.nz-button(color="critical" variant="raised") critical
+button.nz-button(color="confirm" variant="raised") confirm
+button.nz-button(color="info" variant="raised") info
+
+h2 Flat buttons
+
+button.nz-button(variant="flat") Default
+button.nz-button(color="primary" variant="flat") Primary
+button.nz-button(color="accent" variant="flat") Accent
+button.nz-button(color="warn" variant="flat") warn
+button.nz-button(color="critical" variant="flat") critical
+button.nz-button(color="confirm" variant="flat") confirm
+button.nz-button(color="info" variant="flat") info
+
+h2 Flat buttons / raised
+
+button.nz-button(variant="flat") Default
+button.nz-button(color="primary" variant="flat raised") Primary
+button.nz-button(color="accent" variant="flat raised") Accent
+button.nz-button(color="warn" variant="flat raised") warn
+button.nz-button(color="critical" variant="flat raised") critical
+button.nz-button(color="confirm" variant="flat raised") confirm
+button.nz-button(color="info" variant="flat raised") info
+
+h2 Fab
+
+button.nz-fab(variant="raised") D
+button.nz-fab(color="primary" variant="flat raised medium") PRI
+button.nz-fab(color="accent" variant="flat raised medium") Acc
+button.nz-fab(color="warn" variant="flat raised medium") warn
+button.nz-fab(color="critical" variant="flat raised medium") crit
+button.nz-fab(color="confirm" variant="flat raised medium") conf
+button.nz-fab(color="info" variant="flat raised medium") info
+
+
+.nz-card(style="width: 300px; margin: 20px")
+  .nz-card-header
+    .nz-avatar(src="...")
+    .nz-title Valami
+    .nz-subtitle Valami 2
+    button.nz-icon-button(icon="dsfds") D
+
+  img.nz-card-media(src="https://picsum.photos/300/200/?random")
+  p.nz-card-content.
+    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+
+  .nz-card-actions
+    button.nz-button Let's DO THIS!
+    button.nz-button(color="critical") DELETE
+
+
+.nz-card(style="width:300px")
+  img.nz-card-media(src="https://picsum.photos/300/200/?random")
+
+  .nz-card-actions
+    button.nz-button Let's DO THIS!
+    button.nz-button(color="critical") DELETE
+
+    button.nz-icon-button(icon="dsfds") D
+
+
+input.nz-input

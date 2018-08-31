@@ -2,48 +2,62 @@
 # yarn lockfile v1
 
 
+"@angular/cdk@^6.4.6":
+  version "6.4.6"
+  resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-6.4.6.tgz#478ec4010b193a0fb4c246768af4ab6854799a49"
+  dependencies:
+    tslib "^1.7.1"
+
 "@angular/common@^6.1.0":
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/@angular/common/-/common-6.1.0.tgz#7666c385409cd8d313cc66eade2f8a7410a12256"
+  version "6.1.6"
+  resolved "https://registry.yarnpkg.com/@angular/common/-/common-6.1.6.tgz#16597d89dddd72a606d3cc7125ffa30a87f5ee09"
   dependencies:
     tslib "^1.9.0"
 
 "@angular/compiler-cli@^6.1.0":
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-6.1.0.tgz#8015222a3aa47d8d71a594a6fdbaf08335d1f44c"
+  version "6.1.6"
+  resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-6.1.6.tgz#cccebfaf66af3b7c19dd528732b945ce378bd65f"
   dependencies:
     chokidar "^1.4.2"
     minimist "^1.2.0"
     reflect-metadata "^0.1.2"
-    tsickle "^0.30.0"
+    tsickle "^0.32.1"
 
 "@angular/compiler@^6.1.0":
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-6.1.0.tgz#b945439fb3cf6a33d297fcb9a08e487f196de901"
+  version "6.1.6"
+  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-6.1.6.tgz#2c858fe78ad1ca5bb3c886bd638bbb144af36e06"
   dependencies:
     tslib "^1.9.0"
 
 "@angular/core@^6.1.0":
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/@angular/core/-/core-6.1.0.tgz#d591a97c42cb5efd1ece0f1542cb30c7894d3661"
+  version "6.1.6"
+  resolved "https://registry.yarnpkg.com/@angular/core/-/core-6.1.6.tgz#130758ad49cad5f6f075693f6496bbc7d510db3b"
   dependencies:
     tslib "^1.9.0"
 
+"@angular/material@^6.4.6":
+  version "6.4.6"
+  resolved "https://registry.yarnpkg.com/@angular/material/-/material-6.4.6.tgz#30c3dd83173f42a1df28db084930f242706d323a"
+  dependencies:
+    tslib "^1.7.1"
+  optionalDependencies:
+    parse5 "^5.0.0"
+
 "@angular/platform-browser-dynamic@^6.1.0":
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-6.1.0.tgz#b9341c774aacfe7180ceb1bc82c2acb3ab093018"
+  version "6.1.6"
+  resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-6.1.6.tgz#49c2048d61b6d0958b2f0deb68cebe638b2f7f63"
   dependencies:
     tslib "^1.9.0"
 
 "@angular/platform-browser@^6.1.0":
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-6.1.0.tgz#8beb2feb4f072e925b6fbeb8259887335f4a98be"
+  version "6.1.6"
+  resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-6.1.6.tgz#9a9498aa455978e974436000ddde8af9f64eef13"
   dependencies:
     tslib "^1.9.0"
 
 "@angular/router@^6.1.0":
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/@angular/router/-/router-6.1.0.tgz#84cd28211faa31c53f49a571217603ac32a3cce8"
+  version "6.1.6"
+  resolved "https://registry.yarnpkg.com/@angular/router/-/router-6.1.6.tgz#d280e014e5b4399d9631ac9cfd3dfde0cf3f76ed"
   dependencies:
     tslib "^1.9.0"
 
@@ -57,7 +71,6 @@
   dependencies:
     "@anzar/build" ngAnzar/build
     html-webpack-plugin "^3.2.0"
-    webpack-dev-server "^3.1.3"
 
 "@anzar/build@github:ngAnzar/build", "@anzar/build@ngAnzar/build":
   version "1.0.0"
@@ -87,18 +100,19 @@
   version "1.0.0"
   resolved "https://codeload.github.com/ngAnzar/core/tar.gz/6c0d8e8e761a722843882087dccc0c487f73e81e"
   dependencies:
-    "@angular/common" "^5.2.9"
-    "@angular/compiler" "^5.2.9"
-    "@angular/compiler-cli" "^5.2.9"
-    "@angular/core" "^5.2.9"
-    "@angular/platform-browser" "^5.2.9"
-    "@angular/platform-browser-dynamic" "^5.2.9"
-    "@angular/router" "^5.2.9"
+    "@angular/common" "^6.1.0"
+    "@angular/compiler" "^6.1.0"
+    "@angular/compiler-cli" "^6.1.0"
+    "@angular/core" "^6.1.0"
+    "@angular/platform-browser" "^6.1.0"
+    "@angular/platform-browser-dynamic" "^6.1.0"
+    "@angular/router" "^6.1.0"
     "@angularclass/hmr" "^2.1.3"
     "@anzar/build" "github:ngAnzar/build"
-    rxjs "^5.5.8"
-    tslint "^5.9.1"
-    typescript "^2.8.1"
+    rxjs "^6.2.2"
+    tslib "^1.9.3"
+    tslint "^5.11.0"
+    typescript "^3.0.1"
     zone.js "^0.8.25"
 
 "@anzar/style@github:ngAnzar/style":
@@ -3612,6 +3626,10 @@ parse-json@^4.0.0:
     error-ex "^1.3.1"
     json-parse-better-errors "^1.0.1"
 
+parse5@^5.0.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/parse5/-/parse5-5.1.0.tgz#c59341c9723f414c452975564c7c00a68d58acd2"
+
 parseurl@^1.3.2:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/parseurl/-/parseurl-1.3.2.tgz#fc289d4ed8993119460c156253262cdc8de65bf3"
@@ -4563,9 +4581,9 @@ tsconfig-paths@^3.4.0:
     minimist "^1.2.0"
     strip-bom "^3.0.0"
 
-tsickle@^0.30.0:
-  version "0.30.0"
-  resolved "https://registry.yarnpkg.com/tsickle/-/tsickle-0.30.0.tgz#7941146ae92933854a8742fa1047606c4536649b"
+tsickle@^0.32.1:
+  version "0.32.1"
+  resolved "https://registry.yarnpkg.com/tsickle/-/tsickle-0.32.1.tgz#f16e94ba80b32fc9ebe320dc94fbc2ca7f3521a5"
   dependencies:
     jasmine-diff "^0.1.3"
     minimist "^1.2.0"
@@ -4573,7 +4591,7 @@ tsickle@^0.30.0:
     source-map "^0.6.0"
     source-map-support "^0.5.0"
 
-tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
+tslib@^1.7.1, tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
 

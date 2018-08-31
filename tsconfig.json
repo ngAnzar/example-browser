@@ -6,6 +6,9 @@
             "@anzar/core/*": [
                 "./node_modules/@anzar/core/src/*"
             ],
+            "@anzar/core": [
+                "./node_modules/@anzar/core/src"
+            ],
             "@/*": [
                 "./src/*"
             ]

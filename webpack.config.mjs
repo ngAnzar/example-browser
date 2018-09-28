@@ -10,5 +10,10 @@ export default config("@anzar/build-browser", {
     entry: {
         // polyfills: [],
         app: ["relative://src/polyfills.ts", "relative://src/app.module.ts"]
+    },
+    resolve: {
+        alias: {
+            mdi: "relative://node_modules/@mdi/svg/svg"
+        }
     }
 })

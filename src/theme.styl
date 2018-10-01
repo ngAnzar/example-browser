@@ -1,0 +1,30 @@
+@require "@anzar/core/theme/new"
+
+$fg = nz-palette-like(#000, #777, #333)
+$bg = nz-palette-like(#FFF, #CCC, #999)
+
+$bg.on = $fg
+
+$theme = nz-theme(
+  primary: nz-palette(pink, 500, 300, 700),
+  accent: nz-palette(cyan, 500, 300, 700),
+  warn: nz-palette(yellow, 700, 500, 800),
+  critical: nz-palette(red, 600, 400, 800),
+  confirm: nz-palette(green, 700, 500, 900),
+  info: nz-palette(light-blue, 200, 100, 300),
+  disabled: nz-palette-like(#AAA, #CCC, #888),
+  foreground: $fg,
+  background: $bg,
+  isLight: true
+)
+
+$font = nz-font("Roboto", 300, 400, 500)
+$typo = nz-typo-levels($font)
+
+body {
+  nz-typo: $typo.body1
+  color: $fg.default
+  background-color: $bg.default
+}
+
+@require "@anzar/core/index"

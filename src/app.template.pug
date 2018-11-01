@@ -216,9 +216,7 @@
       label Select Field
       .nz-select(bind-data-source="users")
         ng-template(#selected let-item) {{ item.name }}
-        ng-template(#item let-item) {{ item.name | highlight }}
-      .nz-postfix
-        i.nz-arrow-down
+        ng-template(#item let-item) {{ item.name }}
 
     br
     .nz-form-field(style="width: 250px")

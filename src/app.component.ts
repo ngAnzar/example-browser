@@ -4,28 +4,28 @@ import { SelectionEvent } from "@anzar/core/selection.module"
 
 import { DataSource, StaticSource } from "@anzar/core/core.module"
 import { DialogService } from "@anzar/core/dialog.module"
+import { Model, Field } from "@anzar/core/data.module"
 
 
-export interface User {
-    id: string
-    firstName: string
-    lastName: string
-    age: number
-    name: string
+export class User extends Model {
+    @Field() public firstName: string
+    @Field() public lastName: string
+    @Field() public age: number
+
+    public get name(): string {
+        return `${this.firstName} ${this.lastName}`
+    }
 }
 
 
 let fakeData: User[] = []
 for (let i = 0; i < 100000; i++) {
-    fakeData.push({
+    fakeData.push(new User({
         id: `user-${i}`,
         firstName: `FirstName-${i}`,
         lastName: `LastName-${i}`,
-        age: i + 20,
-        get name() {
-            return `${this.firstName} ${this.lastName}`
-        }
-    })
+        age: i + 20
+    }))
 }
 
 
@@ -42,7 +42,7 @@ export class AppComponent {
     public hideXyz: boolean = true
     public selected: boolean[] = [false, true, true, false]
 
-    public readonly users: DataSource<User> = new StaticSource(fakeData)
+    public readonly users: DataSource<User> = new StaticSource(User, fakeData)
 
     // public constructor(@Inject(ChangeDetectorRef) protected cdr: ChangeDetectorRef) {
 
